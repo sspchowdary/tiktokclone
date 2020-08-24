@@ -1,0 +1,31 @@
+*{
+margin:0;
+}
+html  {
+  scroll-snap-type: y mandatory;
+}
+.app_videos{ 
+  position: relative;
+  height:800px;
+  overflow:scroll;
+  border-radius:15px;
+  width:80%;
+  max-width: 500px;
+  scroll-snap-type: y mandatory;
+  }
+  .app{
+    background-color:black;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+/*hide scrollbar for Chrome,Safari and Opera */
+  .app_videos::-webkit-scrollbar{
+    display:none;
+  }
+
+/*hide scrollbar for IE,Edge, and Firefox */
+  .app_videos::-webkit-scrollbar{
+    -ms-overflow-style:none; /*IE and edge*/
+    scrollbar-width:none; /*Firefox*/
+  }

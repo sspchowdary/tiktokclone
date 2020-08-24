@@ -1,0 +1,23 @@
+.videoFooter{
+  position: relative;
+  bottom:50px;
+  display:flex;
+}
+.videoFooter_record{
+  animation: spinTheRecord infinite 5s linear;
+  filter: invert(1);
+  height:50px;
+
+}
+.videoFooter_text{
+  flex: 1;
+}
+   
+@keyframes spinTheRecord{
+     from{
+       transform: rotate(0deg);
+     }
+     to{
+       tranform: rotate(360deg);
+     }
+   }
